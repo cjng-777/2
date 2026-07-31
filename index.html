@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="favi.png" type="image/x-icon">
+
+  <link href="st.css" rel="stylesheet">
+</head>
+<style>
+  .card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+#cart {font-size: 22px;
+  position: fixed;
+  top: 90px;
+  right: 10px;
+  background: none; /* Quitamos el fondo blanco */
+  border: none; /* Quitamos el borde */
+  padding: 0;
+  width: auto; /* Hacemos que se ajuste al contenido */
+  z-index: 999;
+  box-shadow: none; /* Sin sombra */
+  cursor: pointer;
+}
+#cart-details {
+  font-size: 22px;
+  color: black;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 270px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  position: absolute;
+  right: 0;
+}
+    #cart-items img {
+  width: 29px;
+  height: 29px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+    #cart-items {
+      max-height: 200px;
+      overflow-y: auto;
+      padding-left: 20px;
+    }
+  
+.add-to-cart {
+ width: 27%;
+  padding: 5px 20px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(135deg, #000, #555);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+.add-to-cart:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.heros{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.heros img{
+  max-width:85%;
+  height:auto;
+}
+</style>
+<body>
+
+<div class="bg"></div>
+
+<header class="nav">
+ <div class="logo">
+    <img src="lo.png" alt="DON VANTA">
+  </div>
+
+  <div class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<nav class="menu" id="menu">
+  <a href="index.html">Inicio</a>
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+</nav>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<br>
+
+<br>
+
+
+<section class="hero">
+  <img src="2/ba.png" class="hero-bg">
+  <p>ESTO NO ES UN CONECTE MÁS · ES PODER</p>
+</section>
+
+
+
+<section class="heros">
+  <img src="2/bani.png" >
+</section>
+
+<section class="section blog" style="margin-top:1%;margin-bottom:1%;">
+  <div class="container">
+    <div class="row">
+      <a href="vapes.html" class="card-link">
+        <div class="card">
+          <img src="2/vap.png">
+          <div class="info">
+            <p>Vaporizadores</p></div></div></a>
+
+      <a href="mota.html" class="card-link">
+        <div class="card">
+          <img src="2/we.jpg">
+          <div class="info">
+            <p>Weed</p></div></div></a>
+
+ <a href="weed.html" class="card-link">
+        <div class="card">
+          <img src="2/35.png">
+          <div class="info">
+            <p>Weed Premium </p></div></div></a>
+
+
+     
+
+ <a href="sem.html" class="card-link">
+  <div class="card">
+    
+    <video autoplay muted loop playsinline>
+      <source src="2/dinamita.webm" type="video/webm">
+    </video>
+
+    <div class="info">
+      <p> Semillas </p>
+    </div>
+
+  </div>
+</a>
+
+
+
+
+
+      <a href="Polvos.html" class="card-link">
+        <div class="card">
+          <img src="2/coca.jpg">
+          <div class="info">
+            <p>Drogas Duras</p></div></div></a>
+
+
+      <a href="otros.html" class="card-link">
+        <div class="card">
+          <img src="2/41.png">
+          <div class="info">
+            <p>Otros</p></div></div></a>
+
+
+<a href="#" class="card-link">
+        <div class="card">
+          <img src="sep.jpeg">
+          <div class="info">
+            <p>Documentos escolares y de identidad desde $5,0000</p></div></div></a>
+
+            <a href="#" class="card-link">
+        <div class="card">
+          <img src="ine.jpeg">
+          <div class="info">
+            <p>Sabanas e inteligencia desde $1,500</p></div></div></a>
+                      <a href="#" class="card-link">
+        <div class="card">
+          <img src="rmas.jpg">
+          <div class="info">
+            <p>Armas desde $12,000</p></div></div></a>
+
+              <a href="#" class="card-link">
+        <div class="card">
+          <img src="hitm.jpg">
+          <div class="info">
+            <p>Sicarios Profesionales desde $25,000</p></div></div></a>
+        </div></div>
+</section>
+    <hr class="red"  />
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-wrap">
+    <div class="f-info">
+        <div class="logo-footer">
+    <img src="2/jal.png" alt="DON VANTA">
+  </div>
+      <p>Inteligencia, poder y presencia. <br> No es ficción, es magía.</p>
+    </div>
+    <div class="f-links">
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+    </div>
+    <div class="f-contact">
+    </div>
+  </div>
+      <div class="payment-bar">
+      <img src="2/visa.png">
+      <img src="2/master.png">
+      <img src="2/spei.png">
+      <img src="2/oxxo.png">
+    </div>
+ 
+</footer>
+
+
+<style type="text/css">.redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+max-width: 77px;
+
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.5) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}</style>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/525619003394">
+<img src="2/w.png" alt="">
+</a>
+</div>
+
+
+
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  const overlay = document.getElementById('overlay');
+  const btn = document.querySelector('.menu-btn');
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  btn.classList.toggle('active');
+}
+</script>
+</body>
+</html>

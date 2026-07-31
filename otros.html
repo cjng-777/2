@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="icon" href="favi.png" type="image/x-icon">
+  <link href="st.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header class="nav">
+ <div class="logo">
+    <img src="lo.png" alt="DON VANTA">
+  </div>
+
+  <div class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<nav class="menu" id="menu">
+  <a href="index.html">Inicio</a>
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+</nav>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<br>
+
+<br>
+
+
+<section class="hero">
+  <img src="2/ban4.png" class="hero-bg">
+  <p>ESTO NO ES UN CONECTE MÁS · ES PODER</p>
+</section>
+
+
+
+<section class="section blog" style="margin-top:1%;margin-bottom:1%;">
+  <div class="container">
+    <div class="row">
+      <a href="Lavanda.html" class="card-link">
+        <div class="card">
+          <img src="1/62.png">
+          <div class="info">
+            <p>CANN - 36mg - 6pk - Lavanda de limón<hr> <br>$100</p></div></div></a>
+
+          <a href="sangre.html" class="card-link">
+        <div class="card">
+          <img src="1/63.png">
+          <div class="info">
+            <p>CANN - 36mg - 6pk - Cardamomo de naranja de sangre<hr> <br>$100</p></div></div></a>
+
+        <a href="Romero.html" class="card-link">
+        <div class="card">
+          <img src="1/64.png">
+          <div class="info">
+            <p>CANN - 20mg - 4pk - Romero de toronja<hr> <br>$100</p></div></div></a>
+
+          <a href="Pomelo.html" class="card-link">
+        <div class="card">
+          <img src="1/65.png">
+          <div class="info">
+            <p>CANN - 36mg - 6pk - Romero de Pomelo<hr> <br>$100</p></div></div></a>
+
+       <a href="Cloudberry.html" class="card-link">
+        <div class="card" >
+          <img src="1/66.png"style="padding: 15%;">
+          <div class="info">
+            <p>Lagunitas Hi Fi Sessions - 10mg - 12oz Lata - Cloudberry<hr> <br>$100</p></div></div></a>
+
+                <a href="Hoppy.html" class="card-link">
+        <div class="card">
+          <img src="1/67.png">
+          <div class="info">
+            <p>Lagunitas Hi Fi Sessions - 5:5 THC:CBD - 12oz Lata - Hoppy Balance<hr> <br>$100</p></div></div></a>
+            <a href="Chill.html" class="card-link">
+        <div class="card">
+          <img src="1/68.png">
+          <div class="info">
+            <p>Lagunitas Hi Fi Sessions - 10mg - 12oz Lata - Hoppy Chill<hr> <br>$100</p></div></div></a>
+                        <a href="Lata.html" class="card-link">
+        <div class="card">
+          <img src="1/69.png" >
+          <div class="info">
+            <p>Lagunitas Hi Fi Sessions - 10mg - 12oz Lata - Mango<hr> <br>$100</p></div></div></a>
+
+
+<a href="Detox.html" class="card-link">
+        <div class="card">
+          <img src="1/70.png">
+          <div class="info">
+            <p>Stinger Detox<hr> <br>$200</p></div></div></a>
+
+          
+
+</section>
+    <hr class="red"  />
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-wrap">
+    <div class="f-info">
+        <div class="logo-footer">
+    <img src="2/jal.png" alt="DON VANTA">
+  </div>
+      <p>Inteligencia, poder y presencia. <br> No es ficción, es magía.</p>
+    </div>
+    <div class="f-links">
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+    </div>
+    <div class="f-contact">
+    </div>
+  </div>
+      <div class="payment-bar">
+      <img src="2/visa.png">
+      <img src="2/master.png">
+      <img src="2/spei.png">
+      <img src="2/oxxo.png">
+    </div>
+  
+</footer>
+<style type="text/css">.redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+max-width: 77px;
+
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.5) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}</style>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/525619003394">
+<img src="2/w.png" alt="">
+</a>
+</div>
+
+
+
+
+
+
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  const overlay = document.getElementById('overlay');
+  const btn = document.querySelector('.menu-btn');
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  btn.classList.toggle('active');
+}
+</script>
+</body>
+</html>

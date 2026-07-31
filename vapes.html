@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="favi.png" type="image/x-icon">
+  <link href="st.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header class="nav">
+ <div class="logo">
+    <img src="lo.png" alt="DON VANTA">
+  </div>
+
+  <div class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<nav class="menu" id="menu">
+  <a href="index.html">Inicio</a>
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+</nav>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<br>
+
+<br>
+
+
+<section class="hero">
+  <img src="2/bann.png" class="hero-bg">
+  <p>ESTO NO ES UN CONECTE MÁS · ES PODER</p>
+</section>
+
+
+
+<section class="section blog" style="margin-top:1%;margin-bottom:1%;">
+  <div class="container">
+    <div class="row">
+      <a href="veneno.html" class="card-link">
+        <div class="card">
+          <img src="1/1.png">
+          <div class="info">
+            <p>Veneno OG 3.5 G <hr> <br>$350</p></div></div></a>
+
+          <a href="green.html" class="card-link">
+        <div class="card">
+          <img src="1/5.png">
+          <div class="info">
+            <p>Green Crack 1 G <hr> <br>$150</p></div></div></a>
+
+        <a href="expres.html" class="card-link">
+        <div class="card">
+          <img src="1/7.png">
+          <div class="info">
+            <p>Pineapple Express 1 G <hr> <br>$150</p></div></div></a>
+
+          <a href="gelato.html" class="card-link">
+        <div class="card">
+          <img src="1/9.png">
+          <div class="info">
+            <p>Watermelon Gelato 2 G <hr> <br>$230</p></div></div></a>
+
+       <a href="mango.html" class="card-link">
+        <div class="card">
+          <img src="1/11.png">
+          <div class="info">
+            <p>Mango Peach Rings 3.5 G <hr> <br>$400</p></div></div></a>
+
+                <a href="butter.html" class="card-link">
+        <div class="card">
+          <img src="1/15.png">
+          <div class="info">
+            <p>Truffle Butter 3.5 G <hr> <br>$400</p></div></div></a>
+            <a href="jedi.html" class="card-link">
+        <div class="card">
+          <img src="1/19.png">
+          <div class="info">
+            <p>Jedi Kush 3.5 G <hr> <br>$400</p></div></div></a>
+                        <a href="maui.html" class="card-link">
+        <div class="card">
+          <img src="1/23.png">
+          <div class="info">
+            <p>Maui Waui 1 G <hr> <br>$150</p></div></div></a>
+                        <a href="haze.html" class="card-link">
+        <div class="card">
+          <img src="1/25.png">
+          <div class="info">
+            <p>Lavender Haze 3.5 G <hr> <br>$400</p></div></div></a>
+                        <a href="tsunami.html" class="card-link">
+        <div class="card">
+          <img src="1/29.png">
+          <div class="info">
+            <p>Citrus Tsunami 3.5 G <hr> <br>$400</p></div></div></a>
+
+
+
+</section>
+    <hr class="red"  />
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-wrap">
+    <div class="f-info">
+        <div class="logo-footer">
+    <img src="2/jal.png" alt="DON VANTA">
+  </div>
+      <p>Inteligencia, poder y presencia. <br> No es ficción, es magía.</p>
+    </div>
+    <div class="f-links">
+      <a href="sem.html">Semillas</a>
+      <a href="weed.html">Weed</a>
+      <a href="vapes.html">Vapes</a>
+      <a href="Polvos.html">Drogas duras</a>
+      <a href="Heroina.html">Heroina</a>
+    </div>
+    <div class="f-contact">
+    </div>
+  </div>
+      <div class="payment-bar">
+      <img src="2/visa.png">
+      <img src="2/master.png">
+      <img src="2/spei.png">
+      <img src="2/oxxo.png">
+    </div>
+ 
+</footer>
+
+
+<style type="text/css">.redes-flotantes {
+position: fixed;
+right: 8px;
+top: 75%;
+z-index: 20;
+max-width: 77px;
+
+}
+.redes-flotantes img {
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.5) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}</style>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/525619003394">
+<img src="2/w.png" alt="">
+</a>
+</div>
+
+
+
+
+
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  const overlay = document.getElementById('overlay');
+  const btn = document.querySelector('.menu-btn');
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  btn.classList.toggle('active');
+}
+</script>
+</body>
+</html>
